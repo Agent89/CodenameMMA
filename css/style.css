@@ -1,0 +1,144 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* =============================================================================
+   HTML5 element display
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Remove Android and iOS tap highlight color to prevent entire container being highlighted
+ *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
+ * 4. Prevent iOS text size adjust on device orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+
+/**
+ * MMA Betting
+ */
+body{
+background: #333;
+background: linear-gradient(90deg, #430400, #333333);
+background-repeat: no-repeat;
+background-attachment: fixed;
+min-height: 100%;
+}
+
+#content{
+color:#CCC;
+width: 50%;
+margin-left:auto;
+margin-right:auto;
+z-index:1
+position:relative;
+overflow:auto;
+height:85%;
+max-height:550px;
+}
+
+/*
+::-webkit-scrollbar {    
+	width: 12px;
+}
+::-webkit-scrollbar-track {    
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {    
+	border-radius: 10px;    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}*/
+
+
+
+#topToolbar{
+min-height: 30px;
+background:black;
+position: fixed;
+top:0px;
+left:0px;
+width:100%;
+font-size:1.2em;
+color:WHITE;
+z-index:2;
+}
+
+
+#menuWallet{
+top:2px;
+position:relative;
+left:88%;
+cursor:pointer;
+}
+
+#menuWallet::before{
+content:url(http://icons.iconarchive.com/icons/pixelmixer/basic/16/wallet-icon.png);
+}
+
+#wallet{
+background: black;
+color: white;
+width: 200px;
+position: fixed;
+top:19px;
+right: 1em;
+padding: 10px;
+border-radius:10px;
+z-index:3;
+}
+
+#btnAddFunds{
+background: green;
+background: linear-gradient(90deg, #006600,#00FF00);
+text-align: center;
+width: 100px;
+border-radius:4px;
+border:Green;
+text-shadow:1px 1px black;
+cursor: pointer;
+}
+
+.money{
+color:#33FF00;
+}
+
+.logo{
+position:relative;
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+background:#333;
+height:150px;
+max-height:150px;
+max-width:400px;
+border-radius:10px;
+border:1px solid white;
+z-index:4;
+}
+
+.logo .title{
+color:WHITE;
+font-size:57px;
+font-weight:bold;
+font-family: Trade Winds;
+text-stroke: 2px Black;
+z-index:4;
+}

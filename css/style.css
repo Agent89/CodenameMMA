@@ -33,6 +33,7 @@ html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -
 
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 
+
 /**
  * MMA Betting
  */
@@ -90,18 +91,18 @@ cursor:pointer;
 }
 
 #menuWallet::before{
-content:url(http://icons.iconarchive.com/icons/pixelmixer/basic/16/wallet-icon.png);
+content:url('images/Menu/wallet-icon.png');
 }
 
-#wallet{
+#wallet
+{    
 background: black;
 color: white;
 width: 200px;
 position: fixed;
-top:19px;
 right: 1em;
 padding: 10px;
-border-radius:10px;
+border-radius:0px 0px 10px 10px;
 z-index:3;
 }
 

@@ -14,18 +14,36 @@
     <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
     
 
-    <script src="js/libs/jquery-1.7.1.js"></script>
-    <script src="js/libs/prefixfree.min.js"></script>
-    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="js/libs/prefixfree.min.js"></script>
+    <script type="text/javascript" src="js/libs/modernizr-2.0.6.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.json-2.3.min.js"></script>    
     <script language=javascript type="text/javascript">
 
         $(document).ready(function () {
-            
+
             $("#menuWallet").click(function () {
                 $("#wallet").slideToggle("slow");
             });
 
+            //getUserName(1);
         });
+
+        function getUserName(UserID) {
+            var params = new Object();
+            params.UserID = UserID;
+            $.ajax(
+            {
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json",
+                url: "MMACode.asmx/GetUserName",
+                data: $.toJSON(params),
+                success: function (r) {
+                    $("#username").text(r.d);
+                }
+            });
+        }
     </script> 
 </head>
 <body>
@@ -43,7 +61,7 @@
         </div>
 
         <div id="wallet">
-	        <div id="name">USER: Agent89</div>
+	        <div id="username" class="name">Agent89</div>
 	        <div id="record">RECORD: 10W-5L</div>
 	        <div id="funds"><span class="money">$100.00</span></div>
 	        <div class="button" id="btnAddFunds">Add Funds</div>	

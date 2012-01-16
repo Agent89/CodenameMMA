@@ -91,7 +91,7 @@ cursor:pointer;
 }
 
 #menuWallet::before{
-content:url('images/Menu/wallet-icon.png');
+content:url('../images/Menu/wallet-icon.png');
 }
 
 #wallet
@@ -111,10 +111,15 @@ display:none;
 #btnAddFunds{
 background: green;
 background: linear-gradient(90deg, #006600,#00FF00);
-text-align: center;
 width: 100px;
-border-radius:4px;
 border:Green;
+}
+
+.button{
+background: gray;
+text-align: center;
+border-radius:4px;
+border:Black;
 text-shadow:1px 1px black;
 cursor: pointer;
 }

@@ -2,19 +2,22 @@
 
 <html>
 <head>
-<script type="text/javascript" src="js/libs/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="js/libs/jquery.json-2.3.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<title></title>
+
+<script type="text/javascript" language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="http://localhost/CodenameMMA/js/script.js" />
 <script type="text/javascript" language="javascript">
     $(document).ready(function () {
-        getUserName(1,"username");
-    });    
+        getUserName(1, "username");
+        getWalletAmount(1, "walletAmount");
+    });
 </script>
+
 </head>
 <body>
 	        <div id="username" class="name"></div>
 	        <div id="record">RECORD: <span id="recordsWins"></span>-<span id="recordLosses"></span></div>
-	        <div id="funds"><span id="walletAmount"class="money">$100.00</span></div>
-	        <div class="button" id="btnAddFunds">Add Funds</div>	
+	        <div id="funds"><span id="walletAmount" class="money">$100.00</span></div>
+	        <div class="buttonGreen" id="btnAddFunds">Add Funds</div>	
 </body>
 </html>

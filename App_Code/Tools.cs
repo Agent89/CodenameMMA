@@ -46,6 +46,9 @@ public static class Tools
 
     public static string connectionString()
     {
-        return ConfigurationSettings.AppSettings["connectionString"];        
+        string connectionString=ConfigurationManager.AppSettings["connectionString"];
+        connectionString = connectionString.Replace("%userid%", "root");
+        connectionString = connectionString.Replace("%pw%", "agent89");
+        return connectionString;
     } 
 }

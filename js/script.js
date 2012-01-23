@@ -31,7 +31,7 @@ function getUserInfo(username, password) {
             url: "MMACode.asmx/GetUserInfo",
             data: $.toJSON(params),
             success: function (r) {
-                User = jquery.parseJSON(r.d);
+                User = jQuery.parseJSON(r.d);
             },
             error: function (r) {
                 alert(r.responseText);
